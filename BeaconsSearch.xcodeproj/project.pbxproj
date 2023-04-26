@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF9821F029E45649000364DF /* BeaconsSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9821EF29E45649000364DF /* BeaconsSearchApp.swift */; };
+		CF9821F229E45649000364DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9821F129E45649000364DF /* ContentView.swift */; };
+		CF9821F429E4564B000364DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9821F329E4564B000364DF /* Assets.xcassets */; };
+		CF9821F729E4564B000364DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9821F629E4564B000364DF /* Preview Assets.xcassets */; };
+		CF9821FF29E45A2D000364DF /* BeaconsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9821FE29E45A2D000364DF /* BeaconsProvider.swift */; };
+		CF98220229E483F0000364DF /* BeaconsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98220129E483F0000364DF /* BeaconsSearchView.swift */; };
+		CF98220529E4843C000364DF /* BeaconsSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98220429E4843C000364DF /* BeaconsSearchViewModel.swift */; };
+		CF98220829E48B93000364DF /* CLBeacon+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98220729E48B93000364DF /* CLBeacon+Color.swift */; };
+		CF98220C29E48D5B000364DF /* CLProximity+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98220B29E48D5B000364DF /* CLProximity+Description.swift */; };
+		CF9822BC29F6DAA0000364DF /* BeaconTransmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9822BB29F6DAA0000364DF /* BeaconTransmitter.swift */; };
+		CF9822CF29F81B77000364DF /* BeaconAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9822CE29F81B77000364DF /* BeaconAdvertisingView.swift */; };
+		CF9822D129F8217F000364DF /* BeaconAdvertisingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9822D029F8217F000364DF /* BeaconAdvertisingViewModel.swift */; };
+		CF9822D429F84DAE000364DF /* BeaconRegionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9822D329F84DAE000364DF /* BeaconRegionEditorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF9821EC29E45649000364DF /* BeaconsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9821EF29E45649000364DF /* BeaconsSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconsSearchApp.swift; sourceTree = "<group>"; };
+		CF9821F129E45649000364DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF9821F329E4564B000364DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF9821F629E4564B000364DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF9821FE29E45A2D000364DF /* BeaconsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconsProvider.swift; sourceTree = "<group>"; };
+		CF98220029E4633D000364DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CF98220129E483F0000364DF /* BeaconsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconsSearchView.swift; sourceTree = "<group>"; };
+		CF98220429E4843C000364DF /* BeaconsSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconsSearchViewModel.swift; sourceTree = "<group>"; };
+		CF98220729E48B93000364DF /* CLBeacon+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLBeacon+Color.swift"; sourceTree = "<group>"; };
+		CF98220B29E48D5B000364DF /* CLProximity+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLProximity+Description.swift"; sourceTree = "<group>"; };
+		CF9822BB29F6DAA0000364DF /* BeaconTransmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconTransmitter.swift; sourceTree = "<group>"; };
+		CF9822CE29F81B77000364DF /* BeaconAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconAdvertisingView.swift; sourceTree = "<group>"; };
+		CF9822D029F8217F000364DF /* BeaconAdvertisingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconAdvertisingViewModel.swift; sourceTree = "<group>"; };
+		CF9822D329F84DAE000364DF /* BeaconRegionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconRegionEditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF9821E929E45649000364DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF9821E329E45649000364DF = {
+			isa = PBXGroup;
+			children = (
+				CF9821EE29E45649000364DF /* BeaconsSearch */,
+				CF9821ED29E45649000364DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF9821ED29E45649000364DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF9821EC29E45649000364DF /* BeaconsSearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF9821EE29E45649000364DF /* BeaconsSearch */ = {
+			isa = PBXGroup;
+			children = (
+				CF98220629E48B73000364DF /* Extensions */,
+				CF9821FD29E4565B000364DF /* Services */,
+				CF98220329E483F8000364DF /* Views */,
+				CF98220029E4633D000364DF /* Info.plist */,
+				CF9821EF29E45649000364DF /* BeaconsSearchApp.swift */,
+				CF9821F129E45649000364DF /* ContentView.swift */,
+				CF9821F329E4564B000364DF /* Assets.xcassets */,
+				CF9821F529E4564B000364DF /* Preview Content */,
+			);
+			path = BeaconsSearch;
+			sourceTree = "<group>";
+		};
+		CF9821F529E4564B000364DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF9821F629E4564B000364DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF9821FD29E4565B000364DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF9821FE29E45A2D000364DF /* BeaconsProvider.swift */,
+				CF9822BB29F6DAA0000364DF /* BeaconTransmitter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF98220329E483F8000364DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF9822D229F84D95000364DF /* BeaconRegionEditorView */,
+				CF9822CD29F81B60000364DF /* BeaconAdvertisingView */,
+				CF9822CC29F81B48000364DF /* BeaconsSearchView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF98220629E48B73000364DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF98220729E48B93000364DF /* CLBeacon+Color.swift */,
+				CF98220B29E48D5B000364DF /* CLProximity+Description.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF9822CC29F81B48000364DF /* BeaconsSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				CF98220129E483F0000364DF /* BeaconsSearchView.swift */,
+				CF98220429E4843C000364DF /* BeaconsSearchViewModel.swift */,
+			);
+			path = BeaconsSearchView;
+			sourceTree = "<group>";
+		};
+		CF9822CD29F81B60000364DF /* BeaconAdvertisingView */ = {
+			isa = PBXGroup;
+			children = (
+				CF9822CE29F81B77000364DF /* BeaconAdvertisingView.swift */,
+				CF9822D029F8217F000364DF /* BeaconAdvertisingViewModel.swift */,
+			);
+			path = BeaconAdvertisingView;
+			sourceTree = "<group>";
+		};
+		CF9822D229F84D95000364DF /* BeaconRegionEditorView */ = {
+			isa = PBXGroup;
+			children = (
+				CF9822D329F84DAE000364DF /* BeaconRegionEditorView.swift */,
+			);
+			path = BeaconRegionEditorView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF9821EB29E45649000364DF /* BeaconsSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9821FA29E4564B000364DF /* Build configuration list for PBXNativeTarget "BeaconsSearch" */;
+			buildPhases = (
+				CF9821E829E45649000364DF /* Sources */,
+				CF9821E929E45649000364DF /* Frameworks */,
+				CF9821EA29E45649000364DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeaconsSearch;
+			productName = BeaconsSearch;
+			productReference = CF9821EC29E45649000364DF /* BeaconsSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF9821E429E45649000364DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CF9821EB29E45649000364DF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = CF9821E729E45649000364DF /* Build configuration list for PBXProject "BeaconsSearch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF9821E329E45649000364DF;
+			productRefGroup = CF9821ED29E45649000364DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF9821EB29E45649000364DF /* BeaconsSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF9821EA29E45649000364DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9821F729E4564B000364DF /* Preview Assets.xcassets in Resources */,
+				CF9821F429E4564B000364DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF9821E829E45649000364DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF98220529E4843C000364DF /* BeaconsSearchViewModel.swift in Sources */,
+				CF9822CF29F81B77000364DF /* BeaconAdvertisingView.swift in Sources */,
+				CF9821FF29E45A2D000364DF /* BeaconsProvider.swift in Sources */,
+				CF9821F229E45649000364DF /* ContentView.swift in Sources */,
+				CF98220229E483F0000364DF /* BeaconsSearchView.swift in Sources */,
+				CF98220829E48B93000364DF /* CLBeacon+Color.swift in Sources */,
+				CF9821F029E45649000364DF /* BeaconsSearchApp.swift in Sources */,
+				CF98220C29E48D5B000364DF /* CLProximity+Description.swift in Sources */,
+				CF9822D129F8217F000364DF /* BeaconAdvertisingViewModel.swift in Sources */,
+				CF9822BC29F6DAA0000364DF /* BeaconTransmitter.swift in Sources */,
+				CF9822D429F84DAE000364DF /* BeaconRegionEditorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF9821F829E4564B000364DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF9821F929E4564B000364DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF9821FB29E4564B000364DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeaconsSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RKMRVRUUY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeaconsSearch/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth access is needed to use your device as iBeacon";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "\"To look up for iBeacons we need to use your location\"";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"To look up for iBeacons we need to use your location\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akomin.BeaconsSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF9821FC29E4564B000364DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeaconsSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RKMRVRUUY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeaconsSearch/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth access is needed to use your device as iBeacon";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "\"To look up for iBeacons we need to use your location\"";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"To look up for iBeacons we need to use your location\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akomin.BeaconsSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF9821E729E45649000364DF /* Build configuration list for PBXProject "BeaconsSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9821F829E4564B000364DF /* Debug */,
+				CF9821F929E4564B000364DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF9821FA29E4564B000364DF /* Build configuration list for PBXNativeTarget "BeaconsSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9821FB29E4564B000364DF /* Debug */,
+				CF9821FC29E4564B000364DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF9821E429E45649000364DF /* Project object */;
+}
