@@ -25,6 +25,10 @@ class BeaconsSearchViewModel {
         self.beaconRegions = newRegions
         self.beaconsProvider.updateRegionsWith(newRegions)
     }
+    
+    func stopSearching() {
+        beaconsProvider.stopScanning()
+    }
 }
 
 extension BeaconsSearchViewModel: ObservableObject { }

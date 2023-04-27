@@ -39,6 +39,13 @@ class BeaconsProvider: NSObject {
     func stopScanning() {
         beaconRegions.forEach {
             locationManager.stopMonitoring(for: $0)
+            locationManager.stopRangingBeacons(satisfying: $0.beaconIdentityConstraint)
+        }
+    }
+    
+    func startRanging() {
+        beaconRegions.forEach {
+            locationManager.startRangingBeacons(satisfying: $0.beaconIdentityConstraint)
         }
     }
     
@@ -54,11 +61,14 @@ class BeaconsProvider: NSObject {
 extension BeaconsProvider: CLLocationManagerDelegate {
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        if manager.authorizationStatus == .authorizedAlways {
-            if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
-                if CLLocationManager.isRangingAvailable() {
-                    startScanning()
-                }
+        if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) &&
+            CLLocationManager.isRangingAvailable() {
+            switch manager.authorizationStatus {
+            case .authorizedAlways:
+                startScanning()
+            case .authorizedWhenInUse:
+                startRanging()
+            default: return
             }
         }
     }
